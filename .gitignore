@@ -1,0 +1,23 @@
+# Docker volumes
+db_data
+
+# Laravel related
+/vendor
+/node_modules
+.env
+.env.backup
+.env.example
+.env.testing
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+
+# PHP related
+*.log
+composer.phar
+composer.lock
+
+# Other
+.DS_Store
+.idea
