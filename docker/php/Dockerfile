@@ -1,4 +1,4 @@
-FROM php:8.0-fpm
+FROM php:8.1.0-fpm
 COPY php.ini /usr/local/etc/php/
 
 RUN apt-get update \
@@ -17,6 +17,6 @@ ENV COMPOSER_HOME /composer
 
 ENV PATH $PATH:/composer/vendor/bin
 
-WORKDIR /var/www
+WORKDIR /var/www/laravel
 
 RUN composer global require "laravel/installer"
